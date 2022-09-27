@@ -1,0 +1,321 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Alvin Sim{% endblock %}
+
+{% block content %}
+{% load static %}
+<header class="header">
+    <div class="container banner">     
+        <div class="row align-items-center">
+            <div class="col">         
+                <img class="profile-image img-fluid float-start rounded-circle" src="{% static '/img/profile-alvin.jpg' %}" alt="profile image" />
+                <div class="profile-content">
+                    <h1 class="name">Alvin Sim</h1>
+                    <h2 class="desc">Back-end Developer</h2>   
+                    <ul class="social list-inline">
+                        <li class="list-inline-item"><a href="https://github.com/alvinsimzx/"><i class="fa-brands fa-github"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/alvinsimzx/"><i class="fab fa-linkedin-in"></i></a></li>              
+                    </ul> 
+                </div><!--//profile-->
+            </div><!--//col-->
+            <div class="col-12 col-md-auto">
+                <a class="btn btn-cta-primary" href="https://www.linkedin.com/in/alvinsimzx/" target="_blank"><i class="fas fa-paper-plane"></i> Contact Me</a>        
+            </div><!--//col-->
+        </div><!--//row-->         
+    </div><!--//container-->
+</header><!--//header-->
+
+<div class="container sections-wrapper py-5">
+    <div class="row">
+        <div class="primary col-lg-8 col-12">
+            <section class="about section">
+                <div class="section-inner shadow-sm rounded">
+                    <h2 class="heading">About Me</h2>
+                    <div class="content">
+                        <p>Aspiring software developer with knowledge
+                            in various programming frameworks relating
+                            to web, mobile and desktop. Knowledgeable
+                            in project management practices and always
+                            ready to work in a team.
+                            </p>
+                     
+                    </div><!--//content-->
+                </div><!--//section-inner-->                 
+            </section><!--//section-->
+
+            <section class="experience section">
+                <div class="section-inner shadow-sm rounded">
+                    <h2 class="heading">Work Experience</h2>
+                    <div class="content">
+                        <div class="item">
+                            <h3 class="title">Application Administrator - <span class="place"><a href="#">Borneo Convention Centre Kuching</a></span> <span class="year">(Feb 2022 - Present)</span></h3>
+                            <ul>
+                                <li>Developed in-house applications for day-to-day administrative processes mainly with .NET Framework</li>
+                                <li>Maintained company’s public sites (e.g BCCK.ORG.MY)</li>
+                                <li>Oversee external projects with vendors (e.g Facial Recognition for Ramadhan 2022 pilot test)</li>
+                            </ul>
+                        </div><!--//item-->
+                        <div class="item">
+                            <h3 class="title">Intern - <span class="place"><a href="#">Sarawak Energy Berhad</a></span> <span class="year">(June 2021 - Aug 2022)</span></h3>
+                            <ul>
+                                <li>Attached to ICT/Strategy & Planning Division (Business Interface & ICT Governance)</li>
+                                <li>
+                                    Worked on company’s point-based badging system
+                                    <ul>
+                                        <li>Tested and customized Microsoft Teams Incentives App
+                                            based on company’s needs.
+                                            </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div><!--//item-->
+                        
+                        
+                    </div><!--//content-->  
+                </div><!--//section-inner-->                 
+            </section><!--//section-->
+
+           <section class="latest section">
+                <div class="section-inner shadow-sm rounded">
+                    <h2 class="heading">Latest Projects</h2>
+                    <div class="content">    
+                                           
+                        <div class="item featured text-center">
+                            
+                            <div class="featured-image has-ribbon">
+                                <a href="#" target="_blank">
+                                <img class="img-fluid project-image rounded shadow-sm" src="{% static '/img/FacialrecognitionAttendance.png' %}" alt="project name" />
+                                </a>
+                                <div class="ribbon">
+                                    <div class="text">New</div>
+                                </div>
+                            </div>
+                            
+                            <h3 class="title mb-3"><a href="#" target="_blank">Facial Recognition Clock In/Out System</a></h3>
+                                
+                            <div class="desc text-start">                                    
+                                <p>Attendance system that utilises Facial recognition for capturing employee's daily attendance. This new system aims to replace the previous system that required employees to scan their ID cards. The facial recognition framework used is Microsoft's Face API while the system will be built using Winforms in C#.</p>
+                            </div><!--//desc-->           
+                        </div><!--//item-->
+                        <hr class="divider" />
+                        <div class="item row">
+                            <a class="col-md-4 col-12" href="https://youtu.be/EMo9Wjcxgy0" target="_blank">
+                            <img class="img-fluid project-image rounded shadow-sm" src="{% static '/img/TrainingPortal-Screenshot.png' %}" alt="Online Training Portal for Borneo Convention Centre Kuching (BCCK)" />
+                            </a>
+                            <div class="desc col-md-8 col-12">
+                                <h3 class="title"><a href="https://youtu.be/EMo9Wjcxgy0" target="_blank">Online Training Portal for Borneo Convention Centre Kuching (BCCK)</a></h3>
+                                <p class="mb-2">A web-based training management system for Borneo Convention Centre Kuching (BCCK), that is built using ASP.NET Core MVC framework and Microsoft SQL Server. Aimed to be accessed by employees of BCCK for requesting and managing training events.</p>
+                                <p><a class="more-link" href="https://youtu.be/EMo9Wjcxgy0" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                            </div><!--//desc-->                          
+                        </div><!--//item-->
+                        
+                        <div class="item row">
+                            <a class="col-md-4 col-12" href="https://github.com/alvinsimzx/IOT-BasedGardeningSystem" target="_blank">
+                            <img class="img-fluid project-image rounded shadow-sm" src="{% static '/img/iot-based-gardening.png' %}" alt="IOT-based Gardening System" />
+                            </a>
+                            <div class="desc col-md-8 col-12">
+                                <h3 class="title"><a href="https://github.com/alvinsimzx/IOT-BasedGardeningSystem" target="_blank">IOT-based Gardening System</a></h3>
+                                <p class="mb-2">This is an automated gardening system that aims to provide the best living conditions for plants in a garden by getting information about the surroundings using various sensors. This project was built using the Arduino microcontroller, which has various sensors connected to collect information about the surroundings. Plus, the Arduino is connected to a Raspberry Pi, which is mainly used to process the data, send out commands to the Arduino as well as display the data through a hosted web application.</p>
+                                <p><a class="more-link" href="https://github.com/alvinsimzx/IOT-BasedGardeningSystem" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                            </div><!--//desc-->                          
+                        </div><!--//item-->
+                        
+                         <div class="item row">
+                            <a class="col-md-4 col-12" href="https://github.com/alvinsimzx/FoodEdgeOnlineCateringSystem" target="_blank">
+                            <img class="img-fluid project-image rounded shadow-sm" src="{% static '/img/foodedge.png' %}" alt="project name" />
+                            </a>
+                            <div class="desc col-md-8 col-12">
+                                <h3 class="title"><a href="https://github.com/alvinsimzx/FoodEdgeOnlineCateringSystem" target="_blank">FoodEdge - Web-based Food Catering Service</a></h3>
+                                <p class="mb-2">Web-based food catering system as part of the assignment for the study unit called Development Project 2. This web app was mainly built on the Django REST Framework and incorporates the use of the Stripe Payment API.</p>
+                                <p><a class="more-link" href="https://github.com/alvinsimzx/FoodEdgeOnlineCateringSystem" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                            </div><!--//desc-->                          
+                        </div><!--//item-->
+                    </div><!--//content-->  
+                </div><!--//section-inner-->                
+            </section><!--//section-->
+            
+            <section class="projects section">
+                <div class="section-inner shadow-sm rounded">
+                    <h2 class="heading">Competitions/Hackathons Participated</h2>
+                    <div class="content">
+                        <div class="item">
+                            <h3 class="title"><a href="https://github.com/alvinsimzx/FwdHackathon" target="_blank">Ranked Top 10 in FWD Regional Insurtech Data Hackathon 2022</a> <span class="badge badge-theme badge-international">International</span></h3>
+                            <p class="summary">Varsity-level general programming competition organised by University of Malaya.</p>
+                            <p><a class="more-link" href="https://github.com/alvinsimzx/FwdHackathon" target="_blank"><i class="fas fa-external-link-alt"></i>View Credentials</a></p>
+                        </div>
+                        <div class="item">
+                            <h3 class="title"><a href="https://drive.google.com/file/d/1dXewXhj6jhXf_-V16hqT9ysIJV5Umgxi/view?usp=sharing" target="_blank">Ranked Top 50 in Programming League National 2020 by University Malaya</a> <span class="badge badge-theme badge-national">National</span></h3>
+                            <p class="summary">Varsity-level general programming competition organised by University of Malaya.</p>
+                            <p><a class="more-link" href="https://drive.google.com/file/d/1dXewXhj6jhXf_-V16hqT9ysIJV5Umgxi/view?usp=sharing" target="_blank"><i class="fas fa-external-link-alt"></i>View Credentials</a></p>
+                        </div><!--//item-->
+                        <div class="item">
+                            <h3 class="title"><a href="https://drive.google.com/file/d/13MFC-_qANPX6jQtUj9yj1EmgUs77XVSj/view?usp=sharing" target="_blank">Finalist in Virtual I4.0 Hackathon East Malaysia 2020</a> <span class="badge badge-theme badge-national">National</span></h3>
+                            <p class="summary">Varsity-level online hackathon organised by Malaysia Productivity Corporation (MPC), Ministry of International Trade and Industry, & Electrical and Electronics Productivity Nexus (EEPN). </p>
+                            <p><a class="more-link" href="https://drive.google.com/file/d/13MFC-_qANPX6jQtUj9yj1EmgUs77XVSj/view?usp=sharing" target="_blank"><i class="fas fa-external-link-alt"></i>View Credentials</a></p>
+                        </div><!--//item-->
+                        <div class="item">
+                            <h3 class="title"><a href="https://drive.google.com/file/d/1R-zdGJRYoM85bdzvjnyu5_NF2HkJ44Ns/view?usp=sharing" target="_blank">
+                                Participant of NASA Space Apps Hackathon Sarawak 2021</a> <span class="badge badge-theme badge-state">State</span></h3>
+                            <p class="summary">The first NASA Space Apps Hackathon to be held in Sarawak, where participants were required to develop solutions to tackle space-related problems.</p>
+                            <p><a class="more-link" href="https://drive.google.com/file/d/1R-zdGJRYoM85bdzvjnyu5_NF2HkJ44Ns/view?usp=sharing" target="_blank"><i class="fas fa-external-link-alt"></i>View Credentials</a></p>
+                        </div><!--//item-->
+                        
+                    </div><!--//content-->  
+                </div><!--//section-inner-->                 
+            </section><!--//section-->
+            
+            
+        </div><!--//primary-->
+        <div class="secondary col-lg-4 col-12">
+             <aside class="info aside section">
+                <div class="section-inner shadow-sm rounded">
+                    <h2 class="heading sr-only">Basic Information</h2>
+                    <div class="content">
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Sarawak, Malaysia</li>
+                            <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="#">alvinsim74@gmail.com</a></li>
+                        </ul>
+                    </div><!--//content-->  
+                </div><!--//section-inner-->                 
+            </aside><!--//aside-->
+
+            <aside class="education aside section">
+                <div class="section-inner shadow-sm rounded">
+                    <h2 class="heading">Education</h2>
+                    <div class="content">
+                        <div class="item">
+                            <h3 class="title"><i class="fas fa-graduation-cap"></i> BSc Computer Science <br/> (Software Development Major)</h3>
+                            <h4 class="university">Swinburne University of Technology <span class="year">(2019-2022)</span></h4>
+                        </div><!--//item-->
+                    </div><!--//content-->
+                </div><!--//section-inner-->
+            </aside><!--//section-->
+            
+            <aside class="skills aside section">
+                <div class="section-inner shadow-sm rounded">
+                    <h2 class="heading">Skills</h2>
+                    <div class="content">
+                        <p class="intro">
+                            Overview of programming languages and frameworks that I've worked with.</p>
+                        
+                        <div class="skillset">
+                           
+                            <div class="item">
+                                <h3 class="level-title">C# / .Net Framework<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" title="Have worked on professional projects with this language/framework"><i class="fas fa-info-circle"></i>Pro</span></h3>
+
+                                <div class="level-bar progress">
+                                    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 70%" aria-valuenow="70"  aria-valuemin="0" aria-valuemax="70"></div>
+                                </div><!--//level-bar-->                               
+                            </div><!--//item-->
+                            
+                            <div class="item">
+                                <h3 class="level-title">Python &amp; Django<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" title="Have worked on professional projects with this language/framework"><i class="fas fa-info-circle"></i>Pro</span></h3>
+                                <div class="level-bar progress">
+                                    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 70%" aria-valuenow="70"  aria-valuemin="0" aria-valuemax="70"></div>
+                                </div><!--//level-bar-->                                   
+                            </div><!--//item-->
+                            
+                            <div class="item">
+                                <h3 class="level-title">PHP<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" title="Have utilised the language/framework in small projects/tasks"><i class="fas fa-info-circle"></i>Fluent</span></h3>
+                                <div class="level-bar progress">
+                                    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 50%" aria-valuenow="50"  aria-valuemin="0" aria-valuemax="50"></div>
+                                </div><!--//level-bar-->                                  
+                            </div><!--//item-->
+                            
+                            <div class="item">
+                                <h3 class="level-title">Structured Query Language (SQL)<span class="level-label" data-bs-toggle="tooltip" data-placement="left" title="Have utilised the language/framework in small projects/tasks"><i class="fas fa-info-circle"></i>Fluent</span></h3>
+                                <div class="level-bar progress">
+                                    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 50%" aria-valuenow="50"  aria-valuemin="0" aria-valuemax="50"></div>
+                                </div><!--//level-bar-->                                  
+                            </div><!--//item-->
+                            
+                        </div>              
+                    </div><!--//content-->  
+                </div><!--//section-inner-->                 
+            </aside><!--//section-->
+            
+            <!-- <aside class="testimonials aside section">
+                <div class="section-inner shadow-sm rounded">
+                    <h2 class="heading">Testimonials</h2>
+                    <div class="content">
+                        <div class="item">
+                            <blockquote class="quote">                                  
+                                <p><i class="fas fa-quote-left"></i>James is an excellent software engineer and he is passionate about what he does. You can totally count on him to deliver your projects!</p>
+                            </blockquote>                
+                            <p class="source"><span class="name">Tim Adams</span><br /><span class="title">Curabitur commodo</span></p>                                                             
+                        </div>
+                        
+                        <p><a class="more-link" href="#"><i class="fas fa-external-link-alt"></i>More on Linkedin</a></p> 
+                        
+                    </div>
+                </div>
+            </aside>-->
+            
+            
+                        
+            <aside class="languages aside section">
+                <div class="section-inner shadow-sm rounded">
+                    <h2 class="heading">Languages</h2>
+                    <div class="content">
+                        <ul class="list-unstyled">
+                            <li class="item">
+                                <span class="title"><strong>English:</strong></span>
+                                <span class="level">Fluent Speaker <br class="visible-xs"/>
+                                    <i class="fas fa-star"></i> 
+                                    <i class="fas fa-star"></i> 
+                                    <i class="fas fa-star"></i> 
+                                    <i class="fas fa-star"></i> 
+                                    <i class="fas fa-star"></i> </span>
+                            </li><!--//item-->
+                            <li class="item">
+                                <span class="title"><strong>Malay:</strong></span>
+                                <span class="level">Fluent Speaker <br class="visible-xs"/>
+                                    <i class="fas fa-star"></i> 
+                                    <i class="fas fa-star"></i> 
+                                    <i class="fas fa-star"></i> 
+                                    <i class="fas fa-star"></i> </span>
+                            </li><!--//item-->
+                            <li class="item">
+                                <span class="title"><strong>Hokkien:</strong></span>
+                                <span class="level">Native Speaker <br class="visible-xs"/>
+                                    <i class="fas fa-star"></i> 
+                                    <i class="fas fa-star"></i> 
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half"></i></span>
+                            </li><!--//item-->
+                            <li class="item">
+                                <span class="title"><strong>Mandarin:</strong></span>
+                                <span class="level">Elementary proficiency <br class="visible-sm visible-xs"/>
+                                    <i class="fas fa-star"></i> 
+                                    <i class="fas fa-star"></i>  
+                                    <i class="fas fa-star-half"></i></span>
+                            </li><!--//item-->
+                        </ul>
+                    </div><!--//content-->
+                </div><!--//section-inner-->
+            </aside><!--//section-->
+            
+            <aside class="blog aside section">
+                <div class="section-inner shadow-sm rounded">
+                    <h2 class="heading">Latest Blog Posts</h2>
+                    <p>Coming soon.</p>
+                    <div id="rss-feeds" class="content">
+
+                    </div><!--//content-->
+                </div><!--//section-inner-->
+            </aside><!--//section-->
+            
+            
+          
+        </div><!--//secondary-->    
+    </div><!--//row-->
+</div><!--//masonry-->
+
+<!-- ******FOOTER****** --> 
+<footer class="footer">
+    <div class="container text-center">
+            <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+            <small class="copyright">Designed with <span class="sr-only">love</span><i class="fas fa-heart"></i> by <a href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+    </div><!--//container-->
+</footer><!--//footer-->
+{% endblock %}
